@@ -1,0 +1,238 @@
+body {
+    background-color: #e8eaf6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1a237e
+}
+
+.content {
+    width: 1400px;
+    margin: 20px auto;
+    margin-top: 30px;
+    padding: 30px;
+    box-sizing: content-box;
+    box-shadow: 2px 3px 2px 1px rgb(0, 0, 0, 0.2);
+    background-color: rgb(251, 251, 255);
+    min-height: 100px;
+}
+
+.content,
+titulo {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* agregar nuevo link */
+.nuevolink {
+    box-sizing: border-box;
+    border: none;
+    padding: 10px;
+}
+
+.input {
+    width: 100%;
+    outline: #575758;
+}
+
+/*  /agregar nuevo link */
+.head {
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    color: #303f9f
+}
+
+.table,
+.agregarlink {
+    table-layout: fixed;
+    width: 100%;
+
+}
+
+/* ++++++++++++++++++++++++++++++ */
+
+.table,
+.thead {
+    box-sizing: border-box;
+    display: block;
+}
+
+.thead {
+    width: 100%;
+    position: relative;
+    background-color: #303f9f;
+    color: #eaeaf0;
+    min-height: 40px;
+}
+
+.thead,
+.th {
+    box-sizing: border-box;
+    float: left;
+    padding: 5px;
+}
+
+.th {
+    padding-top: 5px;
+    padding: 5px;
+}
+
+#url1 {
+    width: 13.3%;
+}
+
+#url2 {
+    width: 70%;
+}
+
+#url3 {
+    width: 6%;
+}
+
+#url5 {
+    width: 8%;
+}
+
+#url1,
+#url2 {
+    text-align: left;
+    padding-left: 20px;
+}
+
+#url3 {
+    text-align: right;
+    padding-right: 50px;
+}
+
+.sd {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* *************************************************** */
+.tbody {
+    width: 100%;
+    color: rgb(121, 119, 119);
+    box-sizing: border-box;
+}
+
+.tbody,
+#td1,
+#td2,
+#td3,
+#td5 {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+}
+
+#td1 {
+    width: 13.3%;
+}
+
+#td2 {
+    width: 70%;
+}
+
+#td3,
+#td5 {
+    margin-left: 20px;
+    width: 6%;
+    cursor: pointer;
+}
+
+#td3 {
+    background-image: url('lapiz.png');
+    background-repeat: no-repeat;
+}
+
+#td5 {
+    background-image: url('trash.png');
+    background-repeat: no-repeat;
+}
+
+#td1,
+#td2 {
+    text-align: left;
+}
+
+#td3 {
+    padding-left: 15px;
+}
+
+.tfoot {
+    width: 100%;
+}
+
+.tfoot,
+td {
+    text-align: end;
+    color: #1a237e;
+}
+
+/* ***************************************************** */
+.btnuevo {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    min-height: 40px;
+}
+
+/* ***************************************************** */
+#btn {
+    position: relative;
+    float: right;
+    padding: 10px;
+    background-color: #303f9f;
+}
+
+.button {
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* responsivo */
+@media(max-width: 900px) {
+    html {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: none;
+        outline: none;
+    }
+
+    .content {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+
+    }
+
+    .button {
+        float: right;
+        box-sizing: border-box;
+    }
+
+    #td3 {
+        width: 100%;
+    }
+
+    .thead,
+    #fig {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media(max-width: 480px) {
+    .content {
+        width: 100%;
+        height: 100%;
+    }
+}

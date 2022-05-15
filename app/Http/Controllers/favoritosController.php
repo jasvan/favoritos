@@ -24,11 +24,10 @@ class favoritosController extends Controller
     {
         return view(
                     'favoritos.favoritos', 
-                        [
-                            'id'=> $id,
-                            'description' => $description, 
-                            'url'=>$url
-                        ]
+                        compact('id'),
+                        compact('description'),
+                        compact('url')
+                       
         );
     }
    
