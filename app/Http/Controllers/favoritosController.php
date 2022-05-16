@@ -27,10 +27,9 @@ class favoritosController extends Controller
     {
         return view(
             'favoritos.favoritos',
-            compact('id'),
-            compact('description'),
-            compact('url')
-
+                compact('id'),
+                compact('description'),
+                compact('url')
         );
     }
 
@@ -38,18 +37,26 @@ class favoritosController extends Controller
     {
         $user = new User();
         $user->name = $request->name;
-        $user->email = $request->email;
+        $user->email = $request-> email;
         $user->password = $request->password1;
-        $user->save();
+        // $user->save();
     }
 
    public function favorito_nuevo(Request $request)
    {
        $favorito = new Favorito();
-       $favorito->titulo = $request->titulo; 
-       $favorito->url = $request->url; 
-       $favorito->categoria = $request->categoria; 
-       $favorito->descripcion = $request->descripcion; 
+       $favorito->titulo = $request->
+        titulo->validar([
+            'datos' => 'requerido|anulable',
+        ]); 
+       $favorito->url = $request->
+        url->validar([
+            'datos' => 'requerido|anulable',
+        ]);
+       $favorito->categoria = $request->categoria-> validar ([
+            'datos' => 'requerido|anulable' ,
+        ]); 
+       $favorito->descripcion = $request->descripcion->default('Descripción no disponible');
        $favorito->visible = $request->visible; 
        $favorito->save();
    }

@@ -8,8 +8,8 @@
             <div class='thead'>
                 <fieldset>
                     <div class="dropdown-menu">                        
-                        <a class="dropdown-item" href="{{route('favoritos.login')}}">Login</a>
-                        <a class="dropdown-item" href="{{route('favoritos.registro')}}">Registro</a>
+                        <a class="dropdown-item" href="{{route('login')}}">Login</a>
+                        <a class="dropdown-item" href="{{route('registro')}}">Registro</a>
                         <a class="dropdown-item" href="">Favoritos</a>
                     </div>
                 </fieldset>

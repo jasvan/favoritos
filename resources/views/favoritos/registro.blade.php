@@ -4,7 +4,7 @@
 @section('content')
 
     <div class="container container-style">
-        <form action="{{ route('favoritos.user') }}" method="POST">
+        <form action="{{ route('registro1') }}" method="POST">
             @csrf
             <fieldset>
                 <legend class="tittle">Personal información</legend>
@@ -25,7 +25,7 @@
                     <input class="input" type="password2" name="password2"  />
                 </label> --}}
 
-                <input type="submit" name="" id="submit" value="Registrar" />
+                {{-- <input type="submit" name="" id="submit" value="Registrar" /> --}}
             </fieldset>
         </form>
     </div>
