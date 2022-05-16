@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/menu.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/favoritos.css') }}"> --}}
 </head>
 
 <body>

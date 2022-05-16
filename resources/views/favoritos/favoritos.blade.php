@@ -1,6 +1,7 @@
 @extends('layauts.plantilla')
-@section('tittle', 'Favoritos' . $descrption, $url, $id)
-
+@section('tittle', 'Favoritos' )
+{{-- . $descrption, $url, $id --}}
+<link rel="stylesheet" href="{{ asset('css/favoritos.css') }}">
 @section('content')
 
     <div class='content'>
@@ -21,10 +22,10 @@
                     <div class='tr'>
                         <div id="td1">
                         </div>
-                        {{ $description }}
+                        {{-- {{ $description }} --}}
                         <div id="td2">
                             <a href="">
-                                {{ $url }}
+                                {{-- {{ $url }} --}}
                             </a>
                         </div>
 
@@ -34,7 +35,7 @@
                         </div>
                         <div id="td5">
                             <div class='btntd trash'>
-                                <input type="hidden" name=" {{ $id }} " />
+                                {{-- <input type="hidden" name=" {{ $id }} " /> --}}
                             </div>
                         </div>
                     </div>

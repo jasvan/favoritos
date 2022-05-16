@@ -23,14 +23,18 @@ class favoritosController extends Controller
         return view('favoritos.login');
     }
 
-    public function favoritos($id, $description, $url)
+    // public function favoritos($id, $description, $url)
+    // {
+    //     return view(
+    //         'favoritos.favoritos',
+    //             compact('id'),
+    //             compact('description'),
+    //             compact('url')
+    //     );
+    // }
+    public function favoritos()
     {
-        return view(
-            'favoritos.favoritos',
-                compact('id'),
-                compact('description'),
-                compact('url')
-        );
+        return view('favoritos.favoritos');
     }
 
     public function user(Request $request)
