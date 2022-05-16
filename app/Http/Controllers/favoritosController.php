@@ -18,7 +18,7 @@ class favoritosController extends Controller
 
     public function login()
     {
-        return view('favoritos.login');
+        return post('favoritos.login');
     }
     public function favoritos($id, $description, $url)
     {
@@ -29,6 +29,11 @@ class favoritosController extends Controller
                         compact('url')
                        
         );
+    }
+
+    public function store(Request $request){
+
+       
     }
    
 }

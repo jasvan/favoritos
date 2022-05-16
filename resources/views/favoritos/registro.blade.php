@@ -5,6 +5,7 @@
 
     <div class="container container-style">
         <form action="" method="post">
+           {{ csrf_field() }}
             <fieldset>
                 <legend class="tittle">Personal información</legend>
 

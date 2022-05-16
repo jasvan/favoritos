@@ -1,17 +1,28 @@
 <?php
 
 use App\Http\Controllers\favoritosController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\hemeController;
+use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', hemeController::class);
 
 Route::controller(favoritosController::class)->group(function(){
-    Route::get('favoritos','index');
     Route::get('favoritos','login');
+    Route::get('favoritos','index');
     Route::get('favoritos','registro');    
-    Route::get('favoritos/{id}/{desripcion}/{url}','favoritos');  
+    Route::get('favoritos/{id}/{desripcion}/{url}','favoritos'); 
+
+    Route::post('favoritos/login', function(){
+
+        $autentication =request()->only('correo', 'contrasena');
+        if ( Auth::attempt( $autentication ) ) {
+            return "login ok";
+        }else{
+            return "no login";
+        }
+    });    
+     
 });
 
 

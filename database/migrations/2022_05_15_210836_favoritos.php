@@ -6,29 +6,22 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+    
     public function up()
     {
         Schema::create('favoritos', function(Blueprint $table){
-            $table->id();
-            $table->string('titulo');
-            $table->string('descripcion'); 
-            $table->integer('borrado');          
-            $table->integer('visible');          
+            $table -> id();
+            $table -> string  ( 'titulo', 20 );
+            $table -> string  ( 'descripcion', 255 ); 
+            $table -> string  ( 'categoria', 30 ); 
+            $table -> integer ( 'visible', 1 );          
+            $table -> integer ( 'borrado', 1 );          
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+    
     public function down()
     {
-        //
+        Schema::dropIfExists('favoritos');
     }
 };

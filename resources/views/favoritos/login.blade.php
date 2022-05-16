@@ -4,7 +4,8 @@
 
 @section('content')
 <div class="container container-style">
-    <form action="" method="post">
+    <form action="" method="POST">
+       @csrf
         <fieldset>
             <legend class="tittle">Personal information</legend>
 
