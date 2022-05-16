@@ -1,0 +1,19 @@
+.section_menu {
+    width: 800px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px auto;
+    padding: 10px;
+    
+
+}
+
+.link {
+    margin-left: 10px;
+    padding: 10px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #512DA8;
+}

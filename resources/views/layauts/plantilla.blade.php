@@ -8,9 +8,22 @@
     <title>@yield('tittle')</title>
     <link rel="stylesheet" href="{{asset('css/reset.css')}}">
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{ asset('/css/menu.css') }}">
 </head>
 
 <body>
+     <div class="section_menu">
+        <div class="table">
+            <div class='thead'>
+                <fieldset>
+                    <a href="" class="link">Ingresar</a>
+                    <a href="http://" class="link">Unirse</a>
+                    <a href="http://" class="link">Favoritos</a>                    
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
     @yield('content')
 </body>
 

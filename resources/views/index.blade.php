@@ -1,20 +1,20 @@
 @extends('layauts.plantilla')
-
-@section('tittle', 'Principal')
-
+@section('tittle', 'index')
+<link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+<link rel="stylesheet" href="{{ asset('css/menu.css') }}">
 @section('content')
-
-    <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-        @auth
-            <a href="{{ url('/home') }}" >Home</a>
-        @else
-            <a href="{{ route('login') }}" >Log in</a>
-
-            @if (Route::has('register'))
-                <a href="{{ route('register') }}" >Register</a>
-            @endif
-        @endauth
+    <div class="section_menu">
+        <div class="table">
+            <div class='thead'>
+                <fieldset>
+                    <div class="dropdown-menu">                        
+                        <a class="dropdown-item" href="{{route('favoritos.login')}}">Login</a>
+                        <a class="dropdown-item" href="{{route('favoritos.registro')}}">Registro</a>
+                        <a class="dropdown-item" href="">Favoritos</a>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
     </div>
-
 
 @endsection

@@ -11,9 +11,9 @@ return new class extends Migration
     {
         Schema::create('registro', function (Blueprint $table) {
             $table -> id();
-            $table -> string('usuario', 10);
-            $table -> string('correo', 100);
-            $table -> string('contrasena', 15);            
+            $table -> string('usuario');
+            $table -> string('correo');
+            $table -> string('contrasena');            
         }); 
     }
 
