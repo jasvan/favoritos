@@ -1,6 +1,5 @@
 @extends('layauts.plantilla')
-@section('tittle', 'Favoritos' )
-{{-- . $descrption, $url, $id --}}
+@section('tittle', 'Favoritos')
 <link rel="stylesheet" href="{{ asset('css/favoritos.css') }}">
 @section('content')
 
@@ -19,13 +18,18 @@
             </div>
             <form action="" method="POST">
                 <div class='tbody'>
+
+                    @foreach ($datos as $favoritos)
+                    
                     <div class='tr'>
+
                         <div id="td1">
+                            {{$favoritos->titulo}}
                         </div>
-                        {{-- {{ $description }} --}}
+
                         <div id="td2">
                             <a href="">
-                                {{-- {{ $url }} --}}
+                                {{ $favoritos->url }}
                             </a>
                         </div>
 
@@ -33,24 +37,30 @@
                             <div class='btntd penzil'>
                             </div>
                         </div>
+
                         <div id="td5">
                             <div class='btntd trash'>
-                                {{-- <input type="hidden" name=" {{ $id }} " /> --}}
+                                <input type="hidden" name=" {{ $favoritos->id }} " />
                             </div>
                         </div>
+
                     </div>
+
+                    @endforeach
+
                 </div>
                 <div class="editar">
                     <input type="hidden" id="edit">
                 </div>
             </form>
-            <div class='tfoot'>
-                <div class='tr'>
+            
+        </div>
+        <div class='tfoot'>
+                <div class='section-pagina'>
                     <hr />
-                    <div class='td'>Total paginas <strong>77</strong></div>
+                    <div class='paginate'>Items:<strong>{{ count($datos) }}</strong>  Total paginas <strong>{{$datos->render()}}</strong></div>
                 </div>
             </div>
-        </div>
     </div>
 
 @endsection

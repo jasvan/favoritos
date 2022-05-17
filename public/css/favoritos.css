@@ -133,7 +133,7 @@ titulo {
 }
 
 #td2 {
-    width: 70%;
+    width: 72%;
 }
 
 #td3,
@@ -162,15 +162,7 @@ titulo {
     padding-left: 15px;
 }
 
-.tfoot {
-    width: 100%;
-}
 
-.tfoot,
-td {
-    text-align: end;
-    color: #1a237e;
-}
 
 /* ***************************************************** */
 .btnuevo {
@@ -195,7 +187,19 @@ td {
     padding: 10px;
     cursor: pointer;
 }
+.tfoot, .section-pagina {
+    width: 100%;
+   
+}
 
+
+.paginate {
+    position: relative;
+    text-align: center;
+    color: #0f1877;
+    align-items: flex-start;
+   
+}
 
 /* responsivo */
 @media(max-width: 900px) {
