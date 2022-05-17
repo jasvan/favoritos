@@ -1,6 +1,7 @@
 @extends('layauts.plantilla')
 @section('tittle', 'Favoritos')
 <link rel="stylesheet" href="{{ asset('css/favoritos.css') }}">
+
 @section('content')
 
     <div class='content'>
@@ -58,7 +59,7 @@
         <div class='tfoot'>
                 <div class='section-pagina'>
                     <hr />
-                    <div class='paginate'>Items:<strong>{{ count($datos) }}</strong>  Total paginas <strong>{{$datos->render()}}</strong></div>
+                    <div class='paginate'> Total paginas <strong>{{$datos ->render()}}</strong></div>
                 </div>
             </div>
     </div>

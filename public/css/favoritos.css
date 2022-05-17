@@ -187,18 +187,14 @@ titulo {
     padding: 10px;
     cursor: pointer;
 }
-.tfoot, .section-pagina {
+
+.section-pagina {
     width: 100%;
-   
 }
 
-
-.paginate {
-    position: relative;
-    text-align: center;
-    color: #0f1877;
-    align-items: flex-start;
-   
+.tfoot,
+.section-pagina {
+    text-align: end;
 }
 
 /* responsivo */
