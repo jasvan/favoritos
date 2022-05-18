@@ -42,7 +42,7 @@
                                 <td id="td6">
                                     <div >
                                         <button class='btntd trash'></button>
-                                        <input type="hidden" name=" {{ $favoritos->id }} " />
+                                        <input id="delete" type="hidden" name=" {{ $favoritos->id }} " />
                                     </div>
                                 </td>
                             </tr>

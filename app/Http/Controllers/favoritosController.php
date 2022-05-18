@@ -30,7 +30,7 @@ class favoritosController extends Controller
         return view('favoritos.favoritos');
     }
 
-    public function favoritosControllerUrl()
+    public function favoritosControllerGet()
     {
         return view('favoritos.nuevof');
     }
