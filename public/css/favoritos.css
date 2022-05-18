@@ -4,26 +4,138 @@ body {
     color: #1a237e
 }
 
-.content {
-    width: 1400px;
+.content1 {
+    background-color: #e8eaf6;
+    width: 1700px;
     margin: 20px auto;
     margin-top: 50px;
     padding: 30px;
+    border-radius: 10px;
     box-sizing: content-box;
     box-shadow: 2px 3px 2px 1px rgb(0, 0, 0, 0.2);
     background-color: rgb(251, 251, 255);
     min-height: 100px;
 }
 
-.content,
+.content1,
 titulo {
     position: relative;
     text-align: center;
     font-size: 14px;
 }
 
+.contenedor {
+    margin-top: 10px;
+    padding: 10px;
+
+}
+
+.contenedor,
+#head {
+
+    border-radius: 10px;
+}
+
+#th1,
+#th2,
+#th3,
+#th4,
+#th5,
+#th6 {
+    text-align: left;
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+
+#th1 {
+    width: 14%;
+}
+
+#th2 {
+    width: 40%;
+}
+
+#th3 {
+    width: 27%;
+}
+
+#th4 {
+    width: 15%;
+}
+
+#th5,
+#th6 {
+    width: 5%;
+}
+
+
+
+#td1,
+#td2,
+#td3,
+#td4,
+#td5,
+#td6 {
+    font-size: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+#td1 {
+    width: 14%;
+
+}
+
+#td2 {
+    width: 40%;
+}
+
+#td3 {
+    width: 27%;
+}
+
+#td4 {
+    width: 15%;
+}
+
+#td5,
+#td6 {
+    width: 5%;
+    cursor: pointer;
+}
+
+
+#td5 {
+    background-image: url('../img/lapiz.png');
+    background-repeat: no-repeat;
+
+}
+
+
+#td6 {
+    background-image: url('../img/trash.png');
+    background-repeat: no-repeat;
+
+}
+
+.section-pagina {
+
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.paginate {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
 /* agregar nuevo link */
-.nuevolink {
+/* .nuevolink {
     box-sizing: border-box;
     border: none;
     padding: 10px;
@@ -34,7 +146,7 @@ titulo {
     outline: #575758;
 }
 
-/*  /agregar nuevo link */
+
 .head {
     padding: 30px;
     text-align: center;
@@ -48,10 +160,11 @@ titulo {
     table-layout: fixed;
     width: 100%;
 
-}
+} */
 
 /* ++++++++++++++++++++++++++++++ */
 
+/* 
 .table,
 .thead {
     box-sizing: border-box;
@@ -108,53 +221,88 @@ titulo {
 .sd {
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
 /* *************************************************** */
+
+
+
+
+
+/* 
 .tbody {
     width: 100%;
     color: rgb(121, 119, 119);
     box-sizing: border-box;
 }
 
-.odd {
-    background: rgb(212, 17, 17);
-}
+
 
 .tbody,
+
 #td1,
 #td2,
 #td3,
-#td5 {
-    position: relative;
+#td4 {
+   text-align: left;
     box-sizing: border-box;
     float: left;
-    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    margin-left: 8px;
+}
+.tbody,
+.st {
+    margin: 10px 0;
+    position: relative;
+    background-color: #bcbfdb;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+
 }
 
 #td1 {
-    width: 13.3%;
+    width: 10%;
+    
+    
 }
 
 #td2 {
-    width: 72%;
+    width: 68.5%;
+    position: relative;
+    background-color: #c7c7cc;
+   
+    max-height: 30px;
+    padding: 10px;
 }
 
 #td3,
-#td5 {
-    margin-left: 20px;
-    width: 6%;
+#td4 {
+    margin-left: 8px;
+    width: 7.5%;
+
+}
+
+#td3,
+#td4,
+btntd {
     cursor: pointer;
+
 }
 
+.tr,
 #td3 {
-    background-image: url('/public/img/lapiz.png');
+    background-image: url('../img/lapiz.png');
     background-repeat: no-repeat;
+    background-color: #1a237e;
 }
 
-#td5 {
-    background-image: url('/public/img/trash.png');
+.tr,
+#td4 {
+    background-image: url('../img/trash.png');
     background-repeat: no-repeat;
+    background-color: aqua;
 }
 
 #td1,
@@ -165,7 +313,7 @@ titulo {
 #td3 {
     padding-left: 15px;
 }
-
+ */
 
 
 /* ***************************************************** */
