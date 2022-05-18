@@ -117,6 +117,10 @@ titulo {
     box-sizing: border-box;
 }
 
+.odd {
+    background: rgb(212, 17, 17);
+}
+
 .tbody,
 #td1,
 #td2,
@@ -144,12 +148,12 @@ titulo {
 }
 
 #td3 {
-    background-image: url('lapiz.png');
+    background-image: url('/public/img/lapiz.png');
     background-repeat: no-repeat;
 }
 
 #td5 {
-    background-image: url('trash.png');
+    background-image: url('/public/img/trash.png');
     background-repeat: no-repeat;
 }
 

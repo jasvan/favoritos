@@ -21,32 +21,34 @@
                 <div class='tbody'>
 
                     @foreach ($datos as $favoritos)
-                    
-                    <div class='tr'>
+                        <div class='tr odd'>
 
-                        <div id="td1">
-                            {{$favoritos->titulo}}
-                        </div>
-
-                        <div id="td2">
-                            <a href="">
-                                {{ $favoritos->url }}
-                            </a>
-                        </div>
-
-                        <div id="td3">
-                            <div class='btntd penzil'>
+                            <div id="td1">
+                                {{ $favoritos->titulo }}
                             </div>
                         </div>
+                        <div class='tr even'>
 
-                        <div id="td5">
-                            <div class='btntd trash'>
-                                <input type="hidden" name=" {{ $favoritos->id }} " />
+                            <div id="td2">
+                                <a href="">
+                                    {{ $favoritos->url }}
+                                </a>
                             </div>
                         </div>
+                        <div class='tr odd'>
+                            <div id="td3">
+                                <div class='btntd penzil'>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='tr even'>
+                            <div id="td5">
+                                <div class='btntd trash'>
+                                    <input type="hidden" name=" {{ $favoritos->id }} " />
+                                </div>
+                            </div>
 
-                    </div>
-
+                        </div>
                     @endforeach
 
                 </div>
@@ -54,14 +56,14 @@
                     <input type="hidden" id="edit">
                 </div>
             </form>
-            
+
         </div>
         <div class='tfoot'>
-                <div class='section-pagina'>
-                    <hr />
-                    <div class='paginate'> Total paginas <strong>{{$datos ->render()}}</strong></div>
-                </div>
+            <div class='section-pagina'>
+                <hr />
+                <div class='paginate'> Total paginas <strong>{{ $datos->render() }}</strong></div>
             </div>
+        </div>
     </div>
 
 @endsection
