@@ -12,6 +12,7 @@ return new class extends Migration
         Schema::create('favoritos', function (Blueprint $table) {
             $table->id();
             $table->string('titulo');
+            $table->string('url');
             $table->string('descripcion');
             $table->string('categoria');
             $table->integer('visible');

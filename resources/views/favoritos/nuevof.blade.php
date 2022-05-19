@@ -4,29 +4,29 @@
 @section('content')
 
     <div class="container container-style">
-        <form action="" method="POST">
+        <form action="{{ route('favorito_nuevo') }}" method="POST">
             @csrf
             <fieldset>
                 <legend class="tittle">
                     Agregar nuevos favoritos
                 </legend>
 
-                <label for="nombre">
+                <label for="titulo">
                     Titulo
                     <input class="input" type="text" name="titulo" id="titulo" />
                 </label>
 
-                <label for="email">
+                <label for="url">
                     Url
                     <input class="input" type="text" name="url" id="url" />
                 </label>
 
-                <label for="contrasena">
+                <label for="categoria">
                     Categoria
                     <input class="input" type="password" name="categoria" id="categoria" />
                 </label>
 
-                <label for="contrasena2">
+                <label for="descripcion">
                     Descripcion
                     <textarea class="input" name="descripcion" id="textare">
                         </textarea>
