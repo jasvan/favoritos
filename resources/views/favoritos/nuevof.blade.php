@@ -4,7 +4,7 @@
 @section('content')
 
     <div class="container container-style">
-        <form action="{{ route('favorito_nuevo') }}" method="POST">
+        <form action="{{ route('favoritoNuevo') }}" method="POST">
             @csrf
             <fieldset>
                 <legend class="tittle">

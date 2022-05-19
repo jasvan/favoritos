@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Favorito;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 use function PHPUnit\Framework\isEmpty;
 
@@ -36,7 +37,23 @@ class favoritosController extends Controller
     }
 
     // consultas
+    public function loginControllerSession(Request $request)
+    {
+        $query = new User();
+        $query = DB::select('select name, email from users');
 
+        if($request->nombre == 'name'){
+            echo "compara";
+
+        }else{
+            echo " no compara";
+            return view('favoritos.login');
+        }
+
+
+        // return view('favoritos.login');
+        
+    }
 
     public function favoritoController()
     {
@@ -60,7 +77,7 @@ class favoritosController extends Controller
             return "recive datos";
     }
 
-    public function favorito_nuevo(Request $request)
+    public function favoritoNuevoPost(Request $request)
     {
         $favorito = new Favorito();
         $favorito->titulo = $request->titulo;
@@ -71,9 +88,9 @@ class favoritosController extends Controller
         $favorito->borrado = 0;
         if ($favorito) {
             $favorito->save();
-           
-        } else{
-            return "recive datos";
+            return view('favoritos.nuevof');
+        } else {
+            return "no recive datos";
         }
     }
 }

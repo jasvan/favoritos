@@ -12,21 +12,8 @@
     {{-- <link rel="stylesheet" href="{{ asset('css/favoritos.css') }}"> --}}
 </head>
 
-<body>
-    
-    <div class="section_menu">
-        <div class="table2">
-            <div class='thead2'>
-                <fieldset>
-                    <a href="{{ route('login') }}" class="link">Ingresar</a>
-                    <a href="{{ route('registro') }}" class="link">Unirse</a>
-                    <a href="{{ route('favoritos') }}" class="link">Favoritos</a>
-                    <a href="{{ route('favorito_nuevo') }}" class="link">Nuevo favorito</a>
-                </fieldset>
-            </div>
-        </div>
-
-    </div>
+<body>    
+    @include('layauts.partials.head');
     @yield('content')
 </body>
 

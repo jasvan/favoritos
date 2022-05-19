@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('categoria');
             $table->integer('visible');
             $table->integer('borrado');
+            $table->integer('update');
         });
     }
 

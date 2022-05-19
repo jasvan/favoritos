@@ -24,9 +24,6 @@
                 <label for="contrasena2">Confirme su contraseña
                     <input class="input" type="password2" name="password2" />
                 </label>
-
-
-
                 <input type="submit" name="" id="submit" value="Registrar" />
             </fieldset>
         </form>
