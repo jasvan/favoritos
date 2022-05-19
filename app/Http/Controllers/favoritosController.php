@@ -41,26 +41,10 @@ class favoritosController extends Controller
     public function favoritoController()
     {
         $datos = Favorito::simplePaginate(3);
-
-
-
         return view('favoritos.favoritos', compact('datos')); //['datos' => $selectFavoritos]
     }
 
-
-
-    // public function favoritos($id, $description, $url)
-    // {
-    //     return view(
-    //         'favoritos.favoritos',
-    //             compact('id'),
-    //             compact('description'),
-    //             compact('url')
-    //     );
-    // }
-
-
-
+  
     //insertar datos
 
     public function user(Request $request)
