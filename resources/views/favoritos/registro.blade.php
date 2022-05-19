@@ -25,6 +25,8 @@
                     <input class="input" type="password2" name="password2" />
                 </label>
 
+                <input type="checkbox" name="visible" id="visible">
+
                 <input type="submit" name="" id="submit" value="Registrar" />
             </fieldset>
         </form>
