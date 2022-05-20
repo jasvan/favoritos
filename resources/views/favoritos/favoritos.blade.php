@@ -6,7 +6,7 @@
 
     <div class='content1'>
         <div class="titulo">
-            <h1>Tu lista de favoritos</h1>
+            <h2>LISTA DE FAVORITOS</h2>
         </div>
 
         <form method="" action="">
@@ -40,8 +40,7 @@
                                     </div>
                                 </td>
                                 <td id="td6">
-                                    <div >
-                                        <button class='btntd trash'></button>
+                                    <div class='btntd trash'>                                       
                                         <input id="delete" type="hidden" name=" {{ $favoritos->id }} " />
                                     </div>
                                 </td>
@@ -56,7 +55,7 @@
             <div class='section-pagina'>
                 <hr />
                 <div class='paginate'> Total paginas <strong>{{ $datos->render() }}</strong></div>
-            </div>  
+            </div>
     </div>
 
 @endsection

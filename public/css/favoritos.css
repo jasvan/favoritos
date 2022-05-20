@@ -1,19 +1,19 @@
 body {
-    background-color: #e8eaf6;
+    background-color: #fdfdfd;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #1a237e
 }
 
 .content1 {
-    background-color: #e8eaf6;
+
     width: 1430px;
     margin: 20px auto;
     margin-top: 50px;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 4px;
     box-sizing: content-box;
     box-shadow: 2px 3px 2px 1px rgb(0, 0, 0, 0.2);
-    background-color: rgb(251, 251, 255);
+    background-color: #f6f3fc;
     min-height: 100px;
 }
 
@@ -27,15 +27,13 @@ titulo {
 .contenedor {
     margin-top: 10px;
     padding: 10px;
-
+    margin-bottom: 20px;
 }
 
-.contenedor,
-#head {}
 
 #head {
     text-decoration: dashed;
-    background-color: #303f9f;
+    background-color: #5e35b1;
     color: #e8eaf6;
 
 }
@@ -52,10 +50,8 @@ titulo {
     padding-bottom: 8px;
     padding-left: 5px;
     padding-right: 5px;
-    max-height: 30px;    
+    max-height: 30px;
 }
-
-
 
 #th1 {
     width: 14%;
@@ -91,6 +87,8 @@ titulo {
     padding-top: 5px;
     padding-top: 10px;
     padding-bottom: 5px;
+    padding-left: 7px;
+    margin-top: 10px;
 }
 
 
@@ -115,18 +113,23 @@ titulo {
 #td6 {
     width: 5%;
     cursor: pointer;
+    margin: 0 auto;
+
 }
 
 
 #td5 {
     background-image: url('../img/lapiz.png');
     background-repeat: no-repeat;
+
 }
+
 
 
 #td6 {
     background-image: url('../img/trash.png');
     background-repeat: no-repeat;
+
 
 }
 
@@ -141,187 +144,6 @@ titulo {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
 }
-
-/* agregar nuevo link */
-/* .nuevolink {
-    box-sizing: border-box;
-    border: none;
-    padding: 10px;
-}
-
-.input {
-    width: 100%;
-    outline: #575758;
-}
-
-
-.head {
-    padding: 30px;
-    text-align: center;
-    margin: auto;
-    font-size: 20px;
-    color: #303f9f
-}
-
-.table,
-.agregarlink {
-    table-layout: fixed;
-    width: 100%;
-
-} */
-
-/* ++++++++++++++++++++++++++++++ */
-
-/* 
-.table,
-.thead {
-    box-sizing: border-box;
-    display: block;
-}
-
-.thead {
-    width: 100%;
-    position: relative;
-    background-color: #303f9f;
-    color: #eaeaf0;
-    min-height: 40px;
-}
-
-.thead,
-.th {
-    box-sizing: border-box;
-    float: left;
-    padding: 5px;
-}
-
-.th {
-    padding-top: 5px;
-    padding: 5px;
-}
-
-#url1 {
-    width: 13.3%;
-}
-
-#url2 {
-    width: 70%;
-}
-
-#url3 {
-    width: 6%;
-}
-
-#url5 {
-    width: 8%;
-}
-
-#url1,
-#url2 {
-    text-align: left;
-    padding-left: 20px;
-}
-
-#url3 {
-    text-align: right;
-    padding-right: 50px;
-}
-
-.sd {
-    border-radius: 5px;
-    cursor: pointer;
-} */
-
-/* *************************************************** */
-
-
-
-
-
-/* 
-.tbody {
-    width: 100%;
-    color: rgb(121, 119, 119);
-    box-sizing: border-box;
-}
-
-
-
-.tbody,
-
-#td1,
-#td2,
-#td3,
-#td4 {
-   text-align: left;
-    box-sizing: border-box;
-    float: left;
-    padding-top: 15px;
-    padding-bottom: 8px;
-    margin-left: 8px;
-}
-.tbody,
-.st {
-    margin: 10px 0;
-    position: relative;
-    background-color: #bcbfdb;
-    box-sizing: border-box;
-    width: 100%;
-    margin-bottom: 10px;
-
-}
-
-#td1 {
-    width: 10%;
-    
-    
-}
-
-#td2 {
-    width: 68.5%;
-    position: relative;
-    background-color: #c7c7cc;
-   
-    max-height: 30px;
-    padding: 10px;
-}
-
-#td3,
-#td4 {
-    margin-left: 8px;
-    width: 7.5%;
-
-}
-
-#td3,
-#td4,
-btntd {
-    cursor: pointer;
-
-}
-
-.tr,
-#td3 {
-    background-image: url('../img/lapiz.png');
-    background-repeat: no-repeat;
-    background-color: #1a237e;
-}
-
-.tr,
-#td4 {
-    background-image: url('../img/trash.png');
-    background-repeat: no-repeat;
-    background-color: aqua;
-}
-
-#td1,
-#td2 {
-    text-align: left;
-}
-
-#td3 {
-    padding-left: 15px;
-}
- */
 
 
 /* ***************************************************** */
@@ -338,6 +160,10 @@ btntd {
     float: right;
     padding: 10px;
     background-color: #303f9f;
+}
+
+.btntd {
+    margin-top: 10px;
 }
 
 .button {

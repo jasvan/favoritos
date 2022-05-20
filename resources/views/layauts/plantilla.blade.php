@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,11 @@
     {{-- <link rel="stylesheet" href="{{ asset('css/favoritos.css') }}"> --}}
 </head>
 
-<body>    
+<body>
+
     @include('layauts.partials.head');
+
+
     @yield('content')
 </body>
 

@@ -4,7 +4,7 @@
 @section('content')
 
     <div class="container container-style">
-        <form action="{{ route('registro1') }}" method="POST">
+        <form action="{{ route('crearNuevo.registro') }}" method="POST">
             @csrf
             <fieldset>
                 <legend class="tittle">Personal información</legend>

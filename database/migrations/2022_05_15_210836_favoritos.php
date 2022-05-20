@@ -15,8 +15,8 @@ return new class extends Migration
             $table->string('url');
             $table->string('descripcion');
             $table->string('categoria');
-            $table->integer('visible');
-            $table->integer('borrado');
+            $table->integer('visible')->default(0);
+            $table->integer('borrado')->default(0);
             $table->integer('update');
         });
     }
